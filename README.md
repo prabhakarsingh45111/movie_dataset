@@ -1,21 +1,18 @@
 # 🎬 Movie Analytics Dataset
 
-This is a relational database project consisting of 5 interconnected tables that capture comprehensive data about movies, including their language, studio, industry, and IMDb ratings. It is useful for practicing SQL queries, relational joins, and performing data analysis or machine learning tasks on real-world structured data.
+This is a relational database project consisting of 5 interconnected tables that capture comprehensive data about movies, including their language, actor, financial, movie actor.
 
 ---
 
 ## 🎯 Objective
 
-The goal of this dataset project is to provide a structured and relational view of movie data that spans multiple film industries, studios, languages, and user ratings. By organizing the data into five interrelated tables, this dataset enables:
+The goal of this dataset project is to provide a structured and relational view of movie data that spans multiple film industries, languages, and  ratings. By organizing the data into five interrelated tables, this dataset enables:
 
 - 📊 In-depth analysis of movie trends by year, industry, and studio  
 - 🌐 Multilingual and cross-industry comparisons  
 - 🏆 Identification of top- and bottom-rated movies using IMDb scores  
 - 🤖 Applications in machine learning (e.g., rating prediction, clustering)  
 - 📚 Practice for SQL queries and relational database design  
-
-This dataset is ideal for developers, analysts, and students interested in exploring real-world SQL operations, data modeling, and entertainment data insights.
-
 ---
 
 ## 🗂️ Dataset Structure
@@ -24,9 +21,9 @@ The dataset consists of 5 tables:
 
 1. `movies`
 2. `languages`
-3. `studios`
-4. `ratings`
-5. `industries`
+3. `movie_actor`
+4. `financials`
+5. `actors`
 
 Each table is explained below with its purpose and key fields.
 
@@ -58,7 +55,7 @@ Lists all supported languages.
 
 ---
 
-### 3. `studios`
+### 3. `movie_actor`
 Contains studio or production company information.
 
 | Column Name   | Data Type | Description                  |
@@ -68,7 +65,7 @@ Contains studio or production company information.
 
 ---
 
-### 4. `ratings`
+### 4. `financials`
 Holds IMDb rating information for movies.
 
 | Column Name   | Data Type | Description                              |
@@ -79,7 +76,7 @@ Holds IMDb rating information for movies.
 
 ---
 
-### 5. `industries`
+### 5. `actors`
 Defines the film industries (e.g., Bollywood, Hollywood).
 
 | Column Name     | Data Type | Description             |
@@ -101,15 +98,11 @@ Defines the film industries (e.g., Bollywood, Hollywood).
 
 ## 🛠️ Technologies Used
 
-- 🐘 MySQL / PostgreSQL  
+- 🐘 MySQL
 - 📊 SQL for queries  
 - 📄 Markdown for documentation  
 - 🔄 Relational Database Concepts  
 
 ---
 
-## 📁 How to Use
 
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/your-username/movie-analytics-dataset.git

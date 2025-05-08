@@ -38,10 +38,10 @@ Stores core details about each movie.
 |---------------|-----------|------------------------------------------|
 | movie_id      | INT       | Primary Key - Unique ID for each movie   |
 | title         | VARCHAR   | Movie title                              |
-| industry   | INT       | Foreign Key → `industries.industry_id`   |
+| industry   | INT       | Type of industry   |
 | release_year  | YEAR      | Year of release                          |
-| studio    | INT       | Foreign Key → `studios.studio_id`        |
-| release_year   | INT       | Foreign Key → `languages.language_id`    |
+| studio    | INT       | Under which studio released`        |
+| release_year   | INT       | Release year    |
 
 ---
 

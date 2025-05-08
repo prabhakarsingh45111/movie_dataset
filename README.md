@@ -1,6 +1,3 @@
-# movie_dataset
-
-
 # 🎬 Movie Analytics Dataset
 
 This is a relational database project consisting of 5 interconnected tables that capture comprehensive data about movies, including their language, studio, industry, and IMDb ratings. It is useful for practicing SQL queries, relational joins, and performing data analysis or machine learning tasks on real-world structured data.

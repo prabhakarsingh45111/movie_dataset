@@ -38,10 +38,10 @@ Stores core details about each movie.
 |---------------|-----------|------------------------------------------|
 | movie_id      | INT       | Primary Key - Unique ID for each movie   |
 | title         | VARCHAR   | Movie title                              |
-| industry_id   | INT       | Foreign Key → `industries.industry_id`   |
+| industry   | INT       | Foreign Key → `industries.industry_id`   |
 | release_year  | YEAR      | Year of release                          |
-| studio_id     | INT       | Foreign Key → `studios.studio_id`        |
-| language_id   | INT       | Foreign Key → `languages.language_id`    |
+| studio    | INT       | Foreign Key → `studios.studio_id`        |
+| release_year   | INT       | Foreign Key → `languages.language_id`    |
 
 ---
 
@@ -51,7 +51,7 @@ Lists all supported languages.
 | Column Name   | Data Type | Description              |
 |---------------|-----------|--------------------------|
 | language_id   | INT       | Primary Key              |
-| language_name | VARCHAR   | Name of the language     |
+| name | VARCHAR   | Name of the language     |
 
 ---
 
@@ -60,8 +60,8 @@ Contains studio or production company information.
 
 | Column Name   | Data Type | Description                  |
 |---------------|-----------|------------------------------|
-| studio_id     | INT       | Primary Key                  |
-| studio_name   | VARCHAR   | Name of the studio           |
+|   actor_id     | INT       | Primary Key                  |
+|  movie_id| INT   | Name of the studio           |
 
 ---
 
@@ -70,9 +70,11 @@ Holds IMDb rating information for movies.
 
 | Column Name   | Data Type | Description                              |
 |---------------|-----------|------------------------------------------|
-| rating_id     | INT       | Primary Key                              |
-| movie_id      | INT       | Foreign Key → `movies.movie_id`          |
-| imdb_rating   | DECIMAL   | IMDb rating score                        |
+| movie_id     | INT       | Primary Key                              |
+| budget      | DECIMAL       | BUDGET OF MOVIE          |
+| revenue   | DECIMAL   |      REVENUE GENEATED BY MOVIE                  |
+| unit   | VARCHAR   |                         |
+| currency   | VARCHAR   |    CURRENCY                     |
 
 ---
 
@@ -81,9 +83,9 @@ Defines the film industries (e.g., Bollywood, Hollywood).
 
 | Column Name     | Data Type | Description             |
 |------------------|-----------|-------------------------|
-| industry_id      | INT       | Primary Key             |
-| industry_name    | VARCHAR   | Name of the industry    |
-
+| actor_id      | INT       | Primary Key             |
+| name    | VARCHAR   | Name ACTOR    |
+| birth_year    | DATE   | BIRTH YEAR    |
 ---
 
 ## 💡 Example Use Cases

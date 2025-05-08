@@ -56,36 +56,36 @@ Lists all supported languages.
 ---
 
 ### 3. `movie_actor`
-Contains studio or production company information.
+Contains movie actor information
 
 | Column Name   | Data Type | Description                  |
 |---------------|-----------|------------------------------|
 |   actor_id     | INT       | Primary Key                  |
-|  movie_id| INT   | Name of the studio           |
+|  movie_id| INT   | Id of Movie          |
 
 ---
 
 ### 4. `financials`
-Holds IMDb rating information for movies.
+Holds financials information for movies.
 
 | Column Name   | Data Type | Description                              |
 |---------------|-----------|------------------------------------------|
 | movie_id     | INT       | Primary Key                              |
-| budget      | DECIMAL       | BUDGET OF MOVIE          |
-| revenue   | DECIMAL   |      REVENUE GENEATED BY MOVIE                  |
-| unit   | VARCHAR   |                         |
-| currency   | VARCHAR   |    CURRENCY                     |
+| budget      | DECIMAL       | Budegt of movie        |
+| revenue   | DECIMAL   |      Revenue of movie                 |
+| unit   | VARCHAR   |                  Unit of currency       |
+| currency   | VARCHAR   |    Currency                  |
 
 ---
 
 ### 5. `actors`
-Defines the film industries (e.g., Bollywood, Hollywood).
+Contains actors name and their information
 
 | Column Name     | Data Type | Description             |
 |------------------|-----------|-------------------------|
 | actor_id      | INT       | Primary Key             |
-| name    | VARCHAR   | Name ACTOR    |
-| birth_year    | DATE   | BIRTH YEAR    |
+| name    | VARCHAR   | Actor Name   |
+| birth_year    | DATE   | Birth Year    |
 ---
 
 ## 💡 Example Use Cases

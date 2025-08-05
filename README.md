@@ -11,8 +11,7 @@ The goal of this dataset project is to provide a structured and relational view 
 - 📊 In-depth analysis of movie trends by year, industry, and studio  
 - 🌐 Multilingual and cross-industry comparisons  
 - 🏆 Identification of top- and bottom-rated movies using IMDb scores  
-- 🤖 Applications in machine learning (e.g., rating prediction, clustering)  
-- 📚 Practice for SQL queries and relational database design  
+
 ---
 
 ## 🗂️ Dataset Structure
